@@ -76,7 +76,7 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({ messages, onSendMe
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="e.g., Make the walls light blue..."
-            className="flex-1 px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:bg-indigo-600 focus:text-white focus:placeholder-gray-300 transition-colors duration-200"
             disabled={isLoading}
           />
           <button
@@ -85,7 +85,7 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({ messages, onSendMe
             className="p-2 w-10 h-10 bg-indigo-600 text-white rounded-full disabled:bg-indigo-300 disabled:cursor-not-allowed hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M22 2l-7 20-4-9-9-4 20-7z" />
             </svg>
           </button>
         </form>
@@ -93,4 +93,3 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({ messages, onSendMe
     </div>
   );
 };
-   

@@ -2,6 +2,11 @@
 
 This is an interactive web application that allows users to reimagine their living spaces using the power of generative AI. Users can upload a photo of a room, select a new interior design style, and instantly see a photorealistic rendering of the redesigned space. The application also features an interactive chat to refine the design and a slider to compare the "before" and "after" images.
 
+<p align="center">
+  <img src="ai-designer-consultant.png" alt="AI Interior Design Consultant" width="48%">
+  <img src="ai-designer-consultant-2.png" alt="AI Interior Design Consultant 2" width="48%">
+</p>
+
 ## Features
 
 - **Image Upload**: Upload a JPG, PNG, or WEBP image of your room (up to 4MB).

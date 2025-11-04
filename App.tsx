@@ -107,7 +107,9 @@ const App: React.FC = () => {
           <div className="flex flex-col gap-12">
             <div>
               <h2 className="text-xl font-semibold mb-4 text-center">1. Choose a Style</h2>
-              <StyleCarousel styles={DESIGN_STYLES} onSelect={handleStyleSelect} activeStyle={activeStyle} disabled={isLoadingImage} />
+              <div className="pt-2">
+                <StyleCarousel styles={DESIGN_STYLES} onSelect={handleStyleSelect} activeStyle={activeStyle} disabled={isLoadingImage} />
+              </div>
             </div>
 
             {error && (
@@ -125,7 +127,7 @@ const App: React.FC = () => {
             )}
 
             {generatedImage && (
-              <>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
                 <div>
                   <h2 className="text-xl font-semibold mb-4 text-center">2. Compare Your New Design</h2>
                   <ImageComparator original={originalImage} generated={generatedImage} />
@@ -138,7 +140,7 @@ const App: React.FC = () => {
                     isLoading={isLoadingChat} 
                   />
                 </div>
-              </>
+              </div>
             )}
           </div>
         )}
@@ -148,4 +150,3 @@ const App: React.FC = () => {
 };
 
 export default App;
-   
