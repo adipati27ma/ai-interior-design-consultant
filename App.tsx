@@ -88,7 +88,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="bg-gray-50 min-h-screen text-gray-800">
+    <div className="bg-gray-50 min-h-screen text-gray-800 flex flex-col">
       <header className="bg-white shadow-sm sticky top-0 z-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold text-gray-900 tracking-tight">AI Interior Design Consultant</h1>
@@ -100,7 +100,7 @@ const App: React.FC = () => {
         </div>
       </header>
       
-      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow">
         {!originalImage ? (
           <ImageUploader onImageUpload={handleImageUpload} />
         ) : (
@@ -145,6 +145,10 @@ const App: React.FC = () => {
           </div>
         )}
       </main>
+
+      <footer className="text-center py-4 text-sm text-gray-500 border-t bg-white">
+        Powered by AI
+      </footer>
     </div>
   );
 };
