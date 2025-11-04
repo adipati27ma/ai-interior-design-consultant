@@ -5,6 +5,8 @@ This is an interactive web application that allows users to reimagine their livi
 <img width="1911" height="1000" alt="ai-designer-consultant" src="https://github.com/user-attachments/assets/b5f8741b-3b32-439e-a747-151c485a81b4" />
 <img width="1925" height="1004" alt="ai-designer-consultant-2" src="https://github.com/user-attachments/assets/8fc061a8-4ed8-4b73-9344-b7732e380a36" />
 
+recording : https://jam.dev/c/7c438886-5d0b-46db-8c17-75faa46826a3
+
 ## Features
 
 - **Image Upload**: Upload a JPG, PNG, or WEBP image of your room (up to 4MB).
